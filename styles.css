@@ -1,0 +1,55 @@
+:root {
+    --primary: #333333; 
+    --secondary: #555555;
+    --bg-color: #f4f4f4;
+    --card-bg: #ffffff;
+    --input-bg: #e8e8e8;
+    --danger: #b91c1c;
+    --success: #15803d;
+    --text-main: #1f2937;
+}
+
+body { 
+    direction: rtl; margin: 0; background: var(--bg-color); 
+    font-family: 'Segoe UI', system-ui; color: var(--text-main); padding-bottom: 90px;
+}
+
+.glass { background: var(--card-bg); border-radius: 15px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+.container { max-width: 800px; margin: 0 auto; padding: 15px; }
+.card { padding: 15px; margin-bottom: 12px; }
+.flex { display: flex; gap: 10px; align-items: center; }
+.flex-between { justify-content: space-between; }
+.hidden { display: none !important; }
+.full-width { width: 100%; }
+
+/* الحقول الجديدة */
+input, select, textarea { 
+    width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; 
+    border-radius: 8px; background: var(--input-bg); font-size: 1rem; color: #333; outline: none; transition: 0.3s;
+}
+input:focus { border-color: var(--primary); background: #fff; box-shadow: 0 0 0 3px rgba(0,0,0,0.05); }
+
+/* الأزرار العصرية */
+.btn { 
+    border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; color: #fff; 
+    font-weight: 600; transition: 0.2s; font-size: 0.95rem; text-align: center; display: inline-block;
+}
+.btn-primary { background: var(--primary); }
+.btn-success { background: var(--success); }
+.btn-danger { background: var(--danger); }
+.btn-warning { background: #d97706; }
+.btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+
+.bottom-nav { 
+    position: fixed; bottom: 0; width: 100%; height: 70px; 
+    background: #fff; display: flex; justify-content: space-around; 
+    border-top: 1px solid #ddd; z-index: 1000;
+}
+.nav-item { background: none; border: none; color: #888; padding: 10px; text-align: center; }
+.nav-item.active { color: var(--primary); }
+.nav-item small { display: block; font-size: 0.7rem; }
+
+.alert-box { background: #fee2e2; color: #991b1b; padding: 12px; border-radius: 8px; border: 1px solid #fecaca; }
+#lock-screen { position: fixed; inset: 0; background: var(--bg-color); z-index: 2000; display: flex; align-items: center; justify-content: center; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1500; }
+.modal-content { width: 90%; max-width: 450px; background: #fff; border-radius: 15px; padding: 20px; }
