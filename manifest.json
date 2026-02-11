@@ -1,0 +1,16 @@
+{
+  "name": "إدارة الديون Pro",
+  "short_name": "المدير",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f4f4",
+  "theme_color": "#333333",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2534/2534204.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
